@@ -1,3 +1,9 @@
+/*
+    ZixelPCH.h
+    Copyright (c) 2023-2023 Zekronz - MIT License
+    https://github.com/Zekronz/Zixel-Engine
+*/
+
 #pragma once
 
 #define _SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING

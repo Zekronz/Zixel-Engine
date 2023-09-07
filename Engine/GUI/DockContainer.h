@@ -1,3 +1,9 @@
+/*
+    DockContainer.h
+    Copyright (c) 2023-2023 Zekronz - MIT License
+    https://github.com/Zekronz/Zixel-Engine
+*/
+
 #pragma once
 
 #define GUI_DOCK_CONTAINER_MIN_WIDTH 32

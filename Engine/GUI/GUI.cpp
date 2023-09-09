@@ -928,6 +928,40 @@ namespace Zixel {
 
 	}
 
+	std::string GUI::getOpenDirectory(const nfdu8char_t* _defaultPath) {
+		if (!fileDialogAvailable) return "";
+
+		nfdu8char_t* out;
+
+		#pragma warning(suppress : 26812)
+		nfdresult_t result = NFD_PickFolderU8(&out, _defaultPath);
+
+		if (result != NFD_OKAY) return "";
+
+		std::string outStr = out;
+
+		NFD_FreePath(out);
+
+		return outStr;
+	}
+
+	std::wstring GUI::getOpenDirectoryN(const nfdnchar_t* _defaultPath) {
+		if (!fileDialogAvailable) return L"";
+
+		nfdnchar_t* out;
+
+		#pragma warning(suppress : 26812)
+		nfdresult_t result = NFD_PickFolderN(&out, _defaultPath);
+
+		if (result != NFD_OKAY) return L"";
+
+		std::wstring outStr = out;
+
+		NFD_FreePathN(out);
+
+		return outStr;
+	}
+
 	std::string GUI::getSaveFileName(nfdfilteritem_t _filters[], nfdfiltersize_t _filterCount, const std::string _defaultName) {
 
 		if (!fileDialogAvailable) return "";

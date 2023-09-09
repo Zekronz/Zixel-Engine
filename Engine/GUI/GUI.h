@@ -224,6 +224,8 @@ namespace Zixel {
 		std::wstring getOpenFileNameN(nfdnfilteritem_t _filters[], nfdfiltersize_t _filterCount);
 		void getOpenFileNameMultiple(std::vector<std::string>& _pathList, nfdfilteritem_t _filters[], nfdfiltersize_t _filterCount);
 		void getOpenFileNameMultipleN(std::vector<std::wstring>& _pathList, nfdnfilteritem_t _filters[], nfdfiltersize_t _filterCount);
+		std::string getOpenDirectory(const nfdu8char_t* _defaultPath = nullptr);
+		std::wstring getOpenDirectoryN(const nfdnchar_t* _defaultPath = nullptr);
 		std::string getSaveFileName(nfdfilteritem_t _filters[], nfdfiltersize_t _filterCount, const std::string _defaultName = "");
 		std::wstring getSaveFileNameN(nfdnfilteritem_t _filters[], nfdfiltersize_t _filterCount, const std::wstring _defaultName = L"");
 

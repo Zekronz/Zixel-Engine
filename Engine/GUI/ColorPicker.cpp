@@ -15,8 +15,6 @@
 #include "Engine/GUI/NumberEdit.h"
 #include "Engine/GUI/LineEdit.h"
 
-#include "App/GUI/ColorPalette.h"
-
 namespace Zixel {
 
 	ColorPicker::ColorPicker(GUI* _gui, Widget* _parent, Window* _window, Theme* _theme) : Widget(_gui, _parent, _window) {

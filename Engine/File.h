@@ -69,6 +69,7 @@ namespace Zixel {
 		static std::wstring getNameFromPath(const std::wstring& _filePath, bool _includeExtension = false);
 
 		static bool fileExists(const std::string& _filePath);
+		static bool directoryExists(const std::string& _dirPath);
 
 		static FileHandle open(const std::string& _filePath, FileMode _mode);
 

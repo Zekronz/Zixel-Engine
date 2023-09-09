@@ -322,7 +322,7 @@ namespace Zixel {
 	bool ZixelApp::onWindowClose() {
 
 		if (callbackOnWindowClose) return callbackOnWindowClose();
-		return false;
+		return true;
 
 	}
 

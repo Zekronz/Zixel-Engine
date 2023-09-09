@@ -273,12 +273,17 @@ namespace Zixel {
 	}
 
 	bool File::fileExists(const std::string& _filePath) {
-
 		if (_filePath.empty()) return false;
 
 		std::filesystem::path path = std::filesystem::u8path(_filePath);
 		return (std::filesystem::exists(path) && std::filesystem::is_regular_file(path));
+	}
 
+	bool File::directoryExists(const std::string& _dirPath) {
+		if (_dirPath.empty()) return false;
+
+		std::filesystem::path path = std::filesystem::u8path(_dirPath);
+		return (std::filesystem::exists(path) && std::filesystem::is_directory(path));
 	}
 
 	FileHandle File::open(const std::string& _filePath, FileMode _mode) {

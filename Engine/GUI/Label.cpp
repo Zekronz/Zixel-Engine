@@ -276,4 +276,9 @@ namespace Zixel {
 
 	}
 
+	void Label::setColor(Color4f _color, Color4f _colorDisabled) {
+		color = _color;
+		colorDisabled = _colorDisabled;
+	}
+
 }

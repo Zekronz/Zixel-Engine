@@ -47,6 +47,7 @@ namespace Zixel {
 		void setLineBreakMargin(s32 _margin);
 		void setFont(std::string _font);
 		void setText(std::string _text);
+		void setColor(Color4f _color, Color4f _colorDisabled);
 
 	};
 

@@ -31,10 +31,10 @@ namespace Zixel {
 	}
 
 	void StringHelper::trim(std::string& str) {
-		if (str.size() <= 0) return;
+		if (str.empty()) return;
 
-		while (str.front() == ' ') str.erase(0, 1);
-		while (str.back() == ' ') str.erase(str.size() - 1, 1);
+		while (!str.empty() && str.front() == ' ') str.erase(0, 1);
+		while (!str.empty() && str.back() == ' ') str.erase(str.size() - 1, 1);
 	}
 
 	void StringHelper::clean(std::string& _str) {

@@ -12,7 +12,6 @@
 #define GUI_WINDOW_FOCUS_CALLBACK(funcPointer) std::bind(&funcPointer, this, std::placeholders::_1)
 #define GUI_WINDOW_PRE_CLOSE_CALLBACK(funcPointer) std::bind(&funcPointer, this, std::placeholders::_1)
 #define GUI_WINDOW_CLOSE_CALLBACK(funcPointer) std::bind(&funcPointer, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4)
-#define GUI_WIDGET_FOCUS_CALLBACK(funcPointer) std::bind(&funcPointer, this, std::placeholders::_1)
 
 #define GUI_WINDOW_SPR_TITLE_BAR "windowTitleBar"
 #define GUI_WINDOW_SPR_CONTAINER "windowContainer"
